@@ -1,0 +1,39 @@
+extends ../../layout
+
+block content
+  body
+    include ../../header
+    .login-box
+        p Create form 
+        form(action="", method="post")
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputNom">Nom</label>
+                    <input name="inputNom" type="Nom" class="form-control" id="inputNom" placeholder="Nom">
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label for="inputPrenom">Prenom</label>
+                    <input name="inputPrenom" type="Prenom" class="form-control" id="inputPrenom" placeholder="Prenom">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputNumero">Numéro de téléphone</label>
+                    <input name="inputNumero" type="text" class="form-control" id="inputNumero" placeholder="6XX XX XX XX">
+                </div>
+                <div class="form-group">
+                    <label for="inputVille">Ville</label>
+                    <input name="inputVille" type="text" class="form-control" id="inputVille">
+                </div>
+                <div class="form-group">
+                    <label for="inputCommune">Commune</label>
+                    <input name="inputCommune" type="text" class="form-control" id="inputCommune">
+                </div>
+                <div class="form-group">
+                    <label for="inputResidence">Residence</label>
+                    <input name="inputResidence" type="text" class="form-control" id="inputResidence">
+                </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Connection</button>
+            <a href="/api/drivers/link/auth" class="btn btn-lg btn-block" type="submit">J'ai déja un compte</a>
+            <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+    
+    include ../../footer

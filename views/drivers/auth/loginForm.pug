@@ -1,0 +1,25 @@
+extends ../../layout
+
+block content
+  body
+    include ../../header
+    .login-box
+        <form class="form-signin" method="post" action="/api/drivers/link/login">
+            <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">#{title}</h1>
+            .form-group
+                <label for="inputNum">Numéro de téléphone</label>
+                <input type="email" name="inputNum" id="inputNum" class="form-control" placeholder="6..." required autofocus>
+            .form-group
+                <label for="inputPassword">Mot de passe</label>
+                <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Mot de passe" required>
+            <div class="checkbox mb-3">
+                <label>
+                <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Connection</button>
+            <a href="/api/drivers/link/create-new-driver" class="btn btn-lg btn-block" type="submit">Créer un compte</a>
+            <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+        </form>
+    include ../../footer

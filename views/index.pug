@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  body(class="d-flex flex-column h-100")
+    include header
+    h1= title
+    p Welcome to #{title}
+    p
+      <svg class="bi" width="32" height="32" fill="currentColor">
+        <use xlink:href="bootstrap-icons.svg#heart-fill"/>
+      </svg>
+    include footer
